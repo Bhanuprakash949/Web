@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Features */
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.feature-box {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fafafa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.testimonial {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-style: italic;
+}
+
+/* Pricing */
+.pricing {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.pricing-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.card {
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.card ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #28a745;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
